@@ -8,18 +8,11 @@ public class Epic extends Task {
         this.subtasks = subtasks; // заполнение своих полей
     }
 
-    public String[] getTSubtasks() {
+    public String[] getSubtasks() {
 
         return subtasks;
     }
 
-    //    @Override
-//    public boolean matches(String query) {
-//        if (String[] subtasks.contains(query)) {
-//            return true;
-//        }
-//        return false;
-//    }
     @Override
     public boolean matches(String query) {
         for (String subtasks : subtasks) { // перебираем все задачи
